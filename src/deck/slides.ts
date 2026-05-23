@@ -9,6 +9,8 @@
  * 每页使用 componentKey="buildarena-showcase"，由 custom props schema 校验。
  * ========== [VARIABLE / 可变区] END ========== */
 
+import { asset } from "@/utils/asset";
+
 const componentKey = "buildarena-showcase";
 const reqRef = "§13.exemption-1";
 
@@ -24,7 +26,7 @@ export const slides = [
       title: "BuildArena：\nLLM 如何走进工程世界？",
       subtitle: "夏天 · 赛博园丁",
       assets: [
-        { src: "/assets/video/header_bridge.mp4", label: "Bridge" },
+        { src: asset("assets/video/header_bridge.mp4"), label: "Bridge" },
       ],
       items: [
         { label: "AI4E Infrastructure" },
@@ -62,19 +64,19 @@ export const slides = [
       subtitle: "9 个前沿 LLM，3 类工程任务，真实物理仿真验证。",
       assets: [
         {
-          src: "/assets/images/bridge_sample.gif",
+          src: asset("assets/images/bridge_sample.gif"),
           alt: "Bridge construction",
           label: "桥梁建造",
           detail: "长程装配：大量模块需要持续保持空间一致性",
         },
         {
-          src: "/assets/images/construction_vehicle.gif",
+          src: asset("assets/images/construction_vehicle.gif"),
           alt: "Vehicle construction",
           label: "载具设计",
           detail: "开放式设计：没有给定设计目标，需要自己搜索方案",
         },
         {
-          src: "/assets/images/construction_racket.gif",
+          src: asset("assets/images/construction_racket.gif"),
           alt: "Rocket construction",
           label: "火箭结构",
           detail: "推力与结构：位置、朝向、功能目标必须同时满足",
@@ -136,7 +138,7 @@ export const slides = [
       subtitle: "建造问题的答案不是最终产物，而是安全合法的过程。",
       assets: [
         {
-          src: "/assets/images/benchmark_framework.png",
+          src: asset("assets/images/benchmark_framework.png"),
           alt: "BuildArena framework",
         },
       ],
@@ -161,19 +163,19 @@ export const slides = [
       verdict: "LLM 不是在复述 token，而是在搜索设计空间",
       assets: [
         {
-          src: "/assets/images/construction_brige.gif",
+          src: asset("assets/images/construction_brige.gif"),
           alt: "Truss-like bridge",
           label: "桁架结构",
           detail: "Prompt 没有要求桁架，LLM 自主设计构造了相似力学结构。",
         },
         {
-          src: "/assets/images/bridge_cable.gif",
+          src: asset("assets/images/bridge_cable.gif"),
           alt: "Cable-stayed bridge",
           label: "斜拉索桥梁结构",
           detail: "“桥梁”对于 LLM 不只是一个 token，而是完整的工程结构概念。",
         },
         {
-          src: "/assets/video/flyingcar.mp4",
+          src: asset("assets/video/flyingcar.mp4"),
           alt: "Flying car",
           label: "火箭动力载具",
           detail: "面对开放性的任务需求，LLM 自主设计了火箭推进解决方案。",
@@ -235,7 +237,7 @@ export const slides = [
       title: "LLM 一定会走向现实世界\n约束、反馈和验证\n让智能变成可建造的生产力",
       subtitle: "夏天 · 西湖原力 UniForce AI",
       assets: [
-        { src: "/assets/images/tian_wechat.jpg", alt: "微信二维码"},
+        { src: asset("assets/images/tian_wechat.jpg"), alt: "微信二维码"},
       ],
     },
   },

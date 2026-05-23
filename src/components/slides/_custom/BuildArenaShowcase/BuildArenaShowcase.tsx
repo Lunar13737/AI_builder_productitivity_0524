@@ -12,11 +12,12 @@ import {
   BuildArenaShowcasePropsSchema,
   type BuildArenaShowcaseProps,
 } from "./BuildArenaShowcase.schema";
+import { asset } from "@/utils/asset";
 
 /* ========== [VARIABLE / 可变区] BEGIN [REQ-REF: §13.exemption-1, §2 12 页大纲、素材与交互] ========== */
 
-const logoSrc = "/assets/images/UniForce%20Logo.png";
-const reducedMotionFallbackSrc = "/assets/images/header_image.png";
+const logoSrc = asset("assets/images/UniForce%20Logo.png");
+const reducedMotionFallbackSrc = asset("assets/images/header_image.png");
 const motivationIcons: LucideIcon[] = [Scale, Code2, Cog];
 
 export function BuildArenaShowcase({ props }: { props: unknown }) {
@@ -482,7 +483,7 @@ function Representation({ slide }: { slide: BuildArenaShowcaseProps }) {
 function GuiPane() {
   return (
     <div className={styles.guiPane}>
-      <img src="/assets/images/GUI.png" alt="Besiege GUI 界面" />
+      <img src={asset("assets/images/GUI.png")} alt="Besiege GUI 界面" />
       <span>拖拽视角 + 点击操作，精度要求 &lt;5% 屏幕容差</span>
     </div>
   );

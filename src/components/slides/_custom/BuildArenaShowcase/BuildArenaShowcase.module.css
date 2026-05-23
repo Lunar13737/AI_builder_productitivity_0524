@@ -22,7 +22,7 @@
   color: var(--ink);
   background:
     linear-gradient(120deg, rgba(255, 255, 255, 0.97), rgba(238, 246, 255, 0.92)),
-    url("/assets/images/header_image.png") center / cover no-repeat;
+    url("/AI_builder_productitivity_0524/assets/images/header_image.png") center / cover no-repeat;
 }
 
 .slide::before {
@@ -108,7 +108,7 @@
 .cover {
   background:
     linear-gradient(90deg, rgba(4, 11, 25, 0.8), rgba(4, 11, 25, 0.54)),
-    url("/assets/images/header_image.png") center / cover no-repeat,
+    url("/AI_builder_productitivity_0524/assets/images/header_image.png") center / cover no-repeat,
     #06101f;
   color: #fff;
 }
@@ -1135,7 +1135,7 @@
   overflow: hidden;
   background:
     linear-gradient(135deg, rgba(255,255,255,0.88), rgba(239,246,255,0.78)),
-    url("/assets/images/header_image.png") center / cover no-repeat;
+    url("/AI_builder_productitivity_0524/assets/images/header_image.png") center / cover no-repeat;
 }
 
 .industryMap::before {
@@ -1231,7 +1231,7 @@
   gap: 90px;
   background:
     linear-gradient(90deg, rgba(4, 11, 25, 0.96), rgba(4, 11, 25, 0.62)),
-    url("/assets/images/header_image.png") center / cover no-repeat;
+    url("/AI_builder_productitivity_0524/assets/images/header_image.png") center / cover no-repeat;
 }
 
 .closingGrid h1 {
