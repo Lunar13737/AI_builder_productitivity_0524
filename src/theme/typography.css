@@ -1,0 +1,33 @@
+/* ========== [COMMENT / 注释区] BEGIN ==========
+ * 字体 token。dev-protocol/06 §2.2。
+ * 变量名 = 保守；值 = 可变（项目级在 Brief §5 确认）。
+ * ========== [COMMENT / 注释区] END ========== */
+
+/* ========== [CONSERVATIVE / 保守区] BEGIN ==========
+ * 字体阶梯变量名集合为保守。MUST NOT 删除任何变量。
+ * ========== [CONSERVATIVE / 保守区] END ========== */
+
+:root {
+  /* ========== [VARIABLE / 可变区] BEGIN [REQ-REF: §5 typography tokens] ========== */
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei",
+    "Noto Sans CJK SC", "Helvetica Neue", Arial, sans-serif;
+  --font-mono:
+    "JetBrains Mono", "SF Mono", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --font-size-eyebrow: 18px;
+  --font-size-title: 56px;
+  --font-size-section: 44px;
+  --font-size-h2: 36px;
+  --font-size-body: 22px;
+  --font-size-caption: 16px;
+  --font-size-code: 20px;
+
+  --line-height-tight: 1.2;
+  --line-height-body: 1.55;
+
+  --font-weight-bold: 700;
+  --font-weight-semi: 600;
+  --font-weight-regular: 400;
+  /* ========== [VARIABLE / 可变区] END ========== */
+}

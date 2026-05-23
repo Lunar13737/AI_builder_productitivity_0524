@@ -1,0 +1,102 @@
+/* ========== [CONSERVATIVE / 保守区] BEGIN ==========
+ * 全部样式为保守。修改 MUST 走 dev-protocol/05 + 06 联动修订。
+ * ========== [CONSERVATIVE / 保守区] END ========== */
+
+.deck {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  color: var(--color-text);
+  overflow: hidden;
+}
+
+.progressBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--color-overlay);
+  z-index: 10;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--color-accent);
+  transition: width var(--transition-base);
+}
+
+.navControls {
+  position: absolute;
+  left: 50%;
+  bottom: var(--space-3);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(16px);
+  transform: translateX(-50%);
+}
+
+.navControls > button {
+  min-width: 58px;
+  height: 34px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semi);
+  cursor: pointer;
+}
+
+.navControls > button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.navControls > button:focus-visible,
+.navDots button:focus-visible {
+  outline: none;
+  box-shadow: var(--ring-focus);
+}
+
+.navControls span {
+  min-width: 48px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-caption);
+  font-variant-numeric: tabular-nums;
+}
+
+.navDots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 4px;
+}
+
+.navDots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-border);
+  cursor: pointer;
+  transition: width var(--transition-base), background var(--transition-base);
+}
+
+.navDots button.activeDot {
+  width: 26px;
+  background: var(--color-accent);
+}

@@ -1,0 +1,53 @@
+/* ========== [CONSERVATIVE / 保守区] BEGIN ========== */
+
+.slide {
+  width: 100%;
+  height: 100%;
+  padding: var(--slide-pad-y) var(--slide-pad-x);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-5);
+  text-align: center;
+}
+
+.headline {
+  margin: 0;
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  max-width: var(--slide-content-max-width);
+}
+
+.cta {
+  font-size: var(--font-size-h2);
+  color: var(--color-accent);
+  font-weight: var(--font-weight-semi);
+}
+
+.contacts {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: var(--space-4);
+  row-gap: var(--space-2);
+  text-align: left;
+}
+
+.contactRow {
+  display: contents;
+}
+
+.contactLabel {
+  font-size: var(--font-size-body);
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-semi);
+}
+
+.contactValue {
+  margin: 0;
+  font-size: var(--font-size-body);
+  color: var(--color-text);
+}

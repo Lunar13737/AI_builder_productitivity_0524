@@ -1,0 +1,77 @@
+/* ========== [COMMENT / 注释区] BEGIN ==========
+ * 画幅、间距、圆角、阴影 token，+ 全局 reset + reduced-motion。
+ * dev-protocol/06 §2.3。
+ * ========== [COMMENT / 注释区] END ========== */
+
+/* ========== [CONSERVATIVE / 保守区] BEGIN ==========
+ * Token 名 / 全局 reset / reduced-motion 规则 = 保守。
+ * ========== [CONSERVATIVE / 保守区] END ========== */
+
+:root {
+  /* ========== [VARIABLE / 可变区] BEGIN [REQ-REF: §6 layout tokens] ========== */
+  --slide-aspect: 16 / 9;
+  --slide-base-width: 1920px;
+  --slide-base-height: 1080px;
+  --slide-pad-x: 96px;
+  --slide-pad-y: 72px;
+  --slide-content-max-width: 1600px;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 72px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+
+  --shadow-soft: 0 6px 24px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  --transition-base: 240ms ease;
+  /* ========== [VARIABLE / 可变区] END ========== */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--ring-focus);
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

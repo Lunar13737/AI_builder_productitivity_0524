@@ -1,0 +1,28 @@
+<!doctype html>
+<!--
+  ========== [COMMENT / 注释区] BEGIN ==========
+  Vite 入口；React 应用挂载到 #root。
+  本文件由 dev-protocol/02 §5、dev-protocol/12 §2.3 共同规定。
+  ========== [COMMENT / 注释区] END ==========
+-->
+<html lang="zh-CN">
+  <!-- ========== [CONSERVATIVE / 保守区] BEGIN ==========
+       挂载点、字符集、viewport 为保守。修改 MUST 走 dev-protocol 修订流程。
+       ========== [CONSERVATIVE / 保守区] END ========== -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- ========== [VARIABLE / 可变区] BEGIN [REQ-REF: §1 受众与目标, §9 技术与环境约束] ========== -->
+    <title>BuildArena Commercial Share</title>
+    <meta name="description" content="BuildArena commercial share deck for AI4E infrastructure." />
+    <!-- ========== [VARIABLE / 可变区] END ========== -->
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

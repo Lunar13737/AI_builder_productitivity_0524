@@ -1,0 +1,35 @@
+/* ========== [CONSERVATIVE / 保守区] BEGIN ========== */
+
+.slide {
+  width: 100%;
+  height: 100%;
+  padding: var(--slide-pad-y) var(--slide-pad-x);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.quote {
+  margin: 0;
+  font-size: var(--font-size-section);
+  font-weight: var(--font-weight-semi);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  max-width: 1400px;
+  position: relative;
+}
+
+.openMark,
+.closeMark {
+  color: var(--color-accent);
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+.attribution {
+  font-size: var(--font-size-body);
+  color: var(--color-text-muted);
+}

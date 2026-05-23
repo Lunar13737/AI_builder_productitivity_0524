@@ -1,0 +1,31 @@
+# ========== [CONSERVATIVE / 保守区] BEGIN ==========
+# 与 dev-protocol/03-steps/04 Git 忽略规则一致。
+# 修改 MUST 走 dev-protocol 修订流程。
+# ========== [CONSERVATIVE / 保守区] END ==========
+
+# 运行时依赖
+node_modules/
+.venv/
+
+# 构建 / 开发 / 测试缓存
+.cache/
+.vite/
+coverage/
+
+# Playwright 运行产物（基准 __snapshots__/ 仍入仓）
+playwright-report/
+test-results/
+
+# 环境变量与密钥
+.env
+.env.*
+!.env.example
+
+# 日志
+*.log
+
+# macOS
+.DS_Store
+
+# Pages-by-Actions 部署：构建产物由 CI 生成，不进仓库
+dist/

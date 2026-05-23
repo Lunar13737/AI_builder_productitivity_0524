@@ -1,0 +1,42 @@
+/* ========== [COMMENT / 注释区] BEGIN ==========
+ * 颜色 token。变量名 = 保守区（dev-protocol/06 §2 规定）；变量值 = 可变区。
+ * Light 主题在 :root；Dark 主题在 .theme-dark。
+ * 项目自定主题 MUST 在 Brief §13 登记，且 MUST 按 dev-protocol/13 §2 流程。
+ * ========== [COMMENT / 注释区] END ========== */
+
+/* ========== [CONSERVATIVE / 保守区] BEGIN ==========
+ * 变量名集合（每个 :root 内的 --color-* 键名）= 保守。
+ * MUST NOT 删除任何变量；新增 token MUST 走宪法修订。
+ * ========== [CONSERVATIVE / 保守区] END ========== */
+
+:root {
+  /* ========== [VARIABLE / 可变区] BEGIN [REQ-REF: §4.1 light color tokens] ========== */
+  --color-bg: #ffffff;
+  --color-surface: #fafafa;
+  --color-text: #0e1116;
+  --color-text-muted: #5b6776;
+  --color-accent: #2563eb;
+  --color-accent-contrast: #ffffff;
+  --color-border: #e5e7eb;
+  --color-overlay: rgba(0, 0, 0, 0.04);
+  --color-code-bg: #0f172a;
+  --color-code-fg: #e5e7eb;
+  --ring-focus: 0 0 0 3px rgba(37, 99, 235, 0.4);
+  /* ========== [VARIABLE / 可变区] END ========== */
+}
+
+.theme-dark {
+  /* ========== [VARIABLE / 可变区] BEGIN [REQ-REF: §4.2 dark color tokens] ========== */
+  --color-bg: #0b0f17;
+  --color-surface: #121826;
+  --color-text: #f5f7fa;
+  --color-text-muted: #9aa4b2;
+  --color-accent: #60a5fa;
+  --color-accent-contrast: #0b0f17;
+  --color-border: #1f2937;
+  --color-overlay: rgba(255, 255, 255, 0.06);
+  --color-code-bg: #0f172a;
+  --color-code-fg: #e5e7eb;
+  --ring-focus: 0 0 0 3px rgba(96, 165, 250, 0.5);
+  /* ========== [VARIABLE / 可变区] END ========== */
+}
