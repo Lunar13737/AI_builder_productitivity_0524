@@ -237,7 +237,8 @@ export const slides = [
       title: "LLM 一定会走向现实世界\n约束、反馈和验证\n让智能变成可建造的生产力",
       subtitle: "夏天 · 西湖原力 UniForce AI",
       assets: [
-        { src: asset("assets/images/tian_wechat.jpg"), alt: "微信二维码"},
+        { src: asset("assets/images/tian_wechat.jpg"), alt: "微信二维码", label: "夏天", detail: "西湖原力工程总监" },
+        { src: asset("assets/images/zhihong_wechat.jpg"), alt: "微信二维码", label: "孙志红", detail: "西湖原力人力资源主管" },
       ],
     },
   },

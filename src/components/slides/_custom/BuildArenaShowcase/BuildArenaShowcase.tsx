@@ -626,7 +626,7 @@ function Industry({ slide }: { slide: BuildArenaShowcaseProps }) {
 }
 
 function Closing({ slide }: { slide: BuildArenaShowcaseProps }) {
-  const qr = slide.assets?.[0];
+  const assets = slide.assets ?? [];
   return (
     <main className={styles.closingGrid}>
       <section>
@@ -634,13 +634,16 @@ function Closing({ slide }: { slide: BuildArenaShowcaseProps }) {
         <h1>{slide.title}</h1>
         <strong>{slide.subtitle}</strong>
       </section>
-      <aside className={styles.closingQr}>
-        {qr ? (
-          <div className={styles.closingQrFrame}>
-            <img src={qr.src} alt={qr.alt ?? ""} />
+      <aside className={styles.closingQrGroup}>
+        {assets.map((qr) => (
+          <div key={qr.src} className={styles.closingQr}>
+            <div className={styles.closingQrFrame}>
+              <img src={qr.src} alt={qr.alt ?? ""} />
+            </div>
+            {qr.label ? <span className={styles.closingQrName}>{qr.label}</span> : null}
+            {qr.detail ? <span className={styles.closingQrRole}>{qr.detail}</span> : null}
           </div>
-        ) : null}
-        {qr?.label ? <span>{qr.label}</span> : null}
+        ))}
       </aside>
     </main>
   );
