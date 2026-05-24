@@ -1,0 +1,20 @@
+image: node:22
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  before_script:
+    - corepack enable
+    - corepack prepare pnpm@9.12.3 --activate
+    - pnpm install --frozen-lockfile
+  script:
+    - pnpm build
+    - rm -rf public
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
