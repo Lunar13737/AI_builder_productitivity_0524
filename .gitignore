@@ -10,6 +10,7 @@ node_modules/
 # 构建 / 开发 / 测试缓存
 .cache/
 .vite/
+.pnpm-store/
 coverage/
 
 # Playwright 运行产物（基准 __snapshots__/ 仍入仓）

@@ -195,6 +195,24 @@
   color: rgba(255, 255, 255, 0.86);
 }
 
+.coverQr {
+  position: absolute;
+  bottom: 80px;
+  right: 100px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.coverQrLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.72);
+  letter-spacing: 0.04em;
+}
+
 .capabilityLane {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

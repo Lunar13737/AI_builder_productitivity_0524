@@ -5,6 +5,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Code2, Cog, Scale, type LucideIcon } from "lucide-react";
+import { QRCodeSVG } from "qrcode.react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import styles from "./BuildArenaShowcase.module.css";
@@ -107,6 +108,16 @@ function Cover({ slide }: { slide: BuildArenaShowcaseProps }) {
           ))}
         </div>
       </main>
+      <div className={styles.coverQr}>
+        <QRCodeSVG
+          value="https://lunar13737.github.io/AI_builder_productitivity_0524"
+          size={120}
+          bgColor="transparent"
+          fgColor="#ffffff"
+          level="M"
+        />
+        <span className={styles.coverQrLabel}>扫码查看在线版本</span>
+      </div>
     </>
   );
 }
